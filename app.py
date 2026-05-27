@@ -5,8 +5,10 @@ from PIL import Image
 from googletrans import Translator
 
 st.title('Análisis de Sentimiento')
-image = Image.open('emoticones.jpg')
-st.image(image)
+st.image(
+    "emoticones.jpg",
+    width=250
+)
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 
 translator = Translator()
